@@ -1,0 +1,32 @@
+.container {
+  margin: auto;
+  width: 90%;
+  background-color: #f4f1ec;
+  display: flex;
+  flex-direction: column;
+ }
+
+#tweet-text {
+  width: 100%;
+  border: none;
+  border-bottom: solid black;
+  background-color: #f4f1ec;
+  font-weight: bold;
+}
+
+.tweet {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.counter {
+  font-family: Bungee;
+}
+
+.button {
+  background-color: #4056A1;
+  font-family: Bungee;
+  color: white;
+}
