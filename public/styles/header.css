@@ -1,0 +1,17 @@
+header {
+  height: 520px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  color: #FFFFFF;
+  background-color: #0b2b00;
+  background-image: url("https://www.transparenttextures.com/patterns/black-thread.png");
+}
+
+.avatar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
