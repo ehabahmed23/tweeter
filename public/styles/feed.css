@@ -1,0 +1,45 @@
+.container .feed {
+  width: 100%;
+  padding: 10px;
+}
+
+.feed header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#avatar_username {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.feed footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-top: solid black;
+  font-size: 20px;
+}
+
+.user-post {
+  border-bottom: solid, black;
+}
+
+.fa-heart:hover,
+.fa-flag:hover,
+.fa-retweet:hover {
+  color: #c99926;
+}
+
+.tweet-container {
+  border-style: solid;
+  margin-bottom: 16px;
+  padding: 10px;
+  word-wrap: break-word;
+}
+
+.tweet-container:hover {
+  box-shadow: 10px 5px gray;
+}
