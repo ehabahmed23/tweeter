@@ -7,6 +7,7 @@
 $( document ).ready(function() {
   
   loadTweets();
+  submitTweets();
 });
 const createTweetElement = function(tweet) {
   
@@ -50,5 +51,19 @@ const loadTweets = () => {
     renderTweets(data);
   });
 };
+
+
+const submitTweets = () => {
+  $('.tweet-form').submit(function(event){
+  event.preventDefault();
+  const serializeTweet = $(this).serialize();
+  console.log(serializeTweet);
+  $.post('http://localhost:8080/tweets', serializeTweet, (result) => {
+    $("textarea").val("");
+    $(".counter").text(0);
+    loadTweets();
+    });
+  })
+}
 
 
