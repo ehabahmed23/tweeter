@@ -6,9 +6,10 @@ $(document).ready(function() {
     let counter = $(this).parent().find(".counter");
     counter.text(remaining);
     if (remaining < 0) {
-      $(counter).css("color", "red");
+      $(counter).addClass("form--red");
     } else {
-      $(counter).css("color", "inherit");
+      $(counter).removeClass("form--red");
     }
   });
 });
+

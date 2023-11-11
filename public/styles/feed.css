@@ -43,3 +43,7 @@
 .tweet-container:hover {
   box-shadow: 10px 5px gray;
 }
+
+.form--red {
+  color: red;
+}
