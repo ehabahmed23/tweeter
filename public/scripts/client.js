@@ -5,24 +5,28 @@
 */
 
 $( document ).ready(function() {
+
+  const escape = function (str) {
+    let div = document.createElement("div");
+    div.appendChild(document.createTextNode(str));
+    return div.innerHTML;
+  };
   
-  loadTweets();
-  submitTweets();
-});
+  
 const createTweetElement = function(tweet) {
   
   let $tweet = $(`
   <article class="tweet-container">
   <header>
   <div id = 'avatar_username'>
-  <img src="${tweet.user.avatars}" class="avatar"> 
+  <img src="${escape(tweet.user.avatars)}" class="avatar"> 
   <span>${tweet.user.name}</span>
   </div>
   <div>
   ${tweet.user.handle}
   </div>
       </header>
-      <p class="user-post">${tweet.content.text}</p>
+      <p class="user-post">${escape(tweet.content.text)}</p>
       <footer> 
         ${tweet.created_at}
         <span>
@@ -53,17 +57,31 @@ const loadTweets = () => {
 };
 
 
-const submitTweets = () => {
+
   $('.tweet-form').submit(function(event){
   event.preventDefault();
   const serializeTweet = $(this).serialize();
   console.log(serializeTweet);
+  const tweetData = $('#tweet-text').val();
+    if (!tweetData.length) {
+      $("#error-message").text('No text. Please try again.');
+      $("#error-container").slideDown();
+      return
+    } else if (tweetData.length > 140) {
+      $("#error-message").text("Your post must be less then 140 characters");
+      $("#error-container").slideDown();
+      return
+    }
   $.post('http://localhost:8080/tweets', serializeTweet, (result) => {
     $("textarea").val("");
     $(".counter").text(0);
+    $("#error-container").hide();
     loadTweets();
     });
   })
-}
 
+
+loadTweets();
+
+});
 
