@@ -1,17 +1,19 @@
-.header1 {
-  height: 520px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-end;
-  color: #FFFFFF;
-  background-color: #635e00;
-  background-image: url("https://www.transparenttextures.com/patterns/black-thread-light.png");
-}
 
-.avatar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
+  .header1 {
+    height: 520px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    color: #FFFFFF;
+    background-color: #635e00;
+    background-image: url("https://www.transparenttextures.com/patterns/black-thread-light.png");
+  }
+  
+  .avatar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  

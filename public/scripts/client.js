@@ -68,7 +68,7 @@ const loadTweets = () => {
       $("#error-container").slideDown();
       return
     } else if (tweetData.length > 140) {
-      $("#error-message").text("Your post must be less then 140 characters");
+      $("#error-message").text("Too long. Your post must be less then 140 characters");
       $("#error-container").slideDown();
       return
     }
