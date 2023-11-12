@@ -5,7 +5,7 @@ Tweeter is a simple, single-page Twitter clone.
 A simple-page AJAX-based Twitter clone that uses jQuery, HTML5 and plain ol' CSS3 that was created to help 
 web bootcamp students get comfortable with front-end web dev.
 
-!["screenshot Tweeter-page"](/home/labber/lighthouse/week-4/tweeter/docs/Tweeter-home.PNG)
+!["screenshot Tweeter-page"](week-4/tweeter/docs/Tweeter-home.PNG)
 
 ## Getting Started
 
