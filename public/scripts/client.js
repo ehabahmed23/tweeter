@@ -78,7 +78,7 @@ const loadTweets = () => {
     $("#error-container").hide();
     loadTweets();
     });
-  })
+  });
 
 
 loadTweets();
