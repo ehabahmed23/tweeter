@@ -36,24 +36,22 @@
   <body>
     <!-- Top nav bar (fixed) -->
     <nav>
-      <span id="nav-logo">tweeter</span>
-      <div class="write-new-tweet"> 
-        <span><b>Write</b> a new tweet</span>
-        <span id="arrow-down-icon"><i class="fas fa-angle-double-down"></i></span>
-      </div>
+      <span class="nav-title">tweeter</span>
+    <span class="icon">
+      <span class="write-new-tweet"> <strong>Write</strong> a new tweet</span>
+      <i class="fa-solid fa-angles-down"></i>
+    </span>
     </nav>
-
-    <header class="header1">
-      <div class="avatar">
-          <img src="/images/profile-hex.png"> 
-      </div>
-      <br>
-      <div>
-          <h2>Ehab</h2>
-      </div>
-  </header>
-  
-
+    <div class='header-main'>
+      <header class="main-header">
+        <div>
+          <img src="/images/profile-hex.png">
+        </div>
+        <br>
+        <div>
+          <h2>Ehab Ahmed</h2>
+        </div>
+      </header>
     <!-- Page-specific (main) content here -->
     <main class="container">
       <section class="new-tweet">
@@ -64,7 +62,6 @@
           <i class="fa-solid fa-triangle-exclamation" hidden></i>
         </div>
         <form action="/tweets/" method="POST" id="submit-tweet" class="tweet-form">
-          <label for="tweet-text" ></label>
           <textarea name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
           <div class="tweet">
             <button class="button" type="submit">Tweet</button>
@@ -75,5 +72,6 @@
       <section class="feed" id="tweets-container">
       </section>
     </main>
+  </div>
   </body>
 </html>

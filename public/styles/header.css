@@ -1,6 +1,32 @@
-
-  .header1 {
+@media only screen and (min-width: 1024px) {
+  .header-main {
+    display: flex;
     height: 520px;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 175px 0 0 40px;
+  }
+
+  .main-header {
+    height: 400px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    background-color: #635e00;
+    background-image: url("https://www.transparenttextures.com/patterns/black-thread-light.png");
+  }
+
+}
+
+/*tablet*/
+
+@media only screen and (max-width: 1023px) {
+  .main-header {
+    height: 550px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -9,11 +35,18 @@
     color: #FFFFFF;
     background-color: #635e00;
     background-image: url("https://www.transparenttextures.com/patterns/black-thread-light.png");
+    margin: 0;
   }
-  
-  .avatar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+
+  .header-main {
+    height: 520px;
+    width: 100%;
+    padding: 0;
   }
+
+  .container {
+    margin: auto;
+    width: 100%;
+  }
+}
   

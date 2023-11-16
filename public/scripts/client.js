@@ -4,6 +4,7 @@
 * Reminder: Use (and do all your DOM work in) jQuery's document ready function
 */
 
+
 $( document ).ready(function() {
 
   const escape = function (str) {
@@ -50,7 +51,7 @@ const renderTweets = (tweets) => {
 };
 
 const loadTweets = () => {
-  $.get('http://localhost:8080/tweets', (data) => {
+  $.get('/tweets', (data) => {
     console.log("Fetched succesfully: ", data);
     renderTweets(data);
   });
@@ -72,9 +73,9 @@ const loadTweets = () => {
       $("#error-container").slideDown();
       return
     }
-  $.post('http://localhost:8080/tweets', serializeTweet, (result) => {
+  $.post('/tweets', serializeTweet, (result) => {
     $("textarea").val("");
-    $(".counter").text(0);
+    $(".counter").text(140);
     $("#error-container").hide();
     loadTweets();
     });

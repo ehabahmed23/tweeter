@@ -1,53 +1,108 @@
+@media only screen and (min-width: 1024px) {
+  .container form {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    padding: 20px;
+  }
 
-.container {
-  margin: auto;
-  width: 90%;
-  background-color: #f4f1ec;
-  display: flex;
-  flex-direction: column;
- }
+  #tweet-text {
+    width: 100%;
+    border: none;
+    border-bottom: solid black;
+    background-color: #f4f1ec;
+    font-weight: bold;
+  }
 
-#tweet-text {
-  width: 100%;
-  border: none;
-  border-bottom: solid black;
-  background-color: #f4f1ec;
-  font-weight: bold;
+  .tweet {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .counter {
+    font-family: Bungee;
+  }
+
+  .button {
+    background-color: #4056A1;
+    font-family: Bungee;
+    color: white;
+  }
+
+  #error-container {
+    margin: 10px auto;
+    background-color: rgb(252, 223, 223);
+    border: solid red;
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    color: red;
+    display: none;
+  }
+
+  #error-message {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
 }
 
-.tweet {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  margin-top: 10px;
-}
 
-.counter {
-  font-family: Bungee;
-}
+@media only screen and (max-width: 1023px) {
+  .container form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+  }
 
-.button {
-  background-color: #4056A1;
-  font-family: Bungee;
-  color: white;
-}
+  #tweet-text {
+    width: 100%;
+    border: none;
+    border-bottom: solid black;
+    background-color: #f4f1ec;
+    font-weight: bold;
+  }
 
-#error-container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin: 10px auto;
-  background-color: rgb(252, 223, 223);
-  border: solid red;
-  width: 40%;
-  justify-content: space-around;
-  padding-top: 7px;
-  padding-bottom: 7px;
-  color: red;
-  display: none;
-}
+  .tweet {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px;
+  }
 
-#error-message {
-  margin-left: 5px;
-  margin-right: 5px;
+  .counter {
+    font-family: Bungee;
+  }
+
+  .button {
+    background-color: #4056A1;
+    font-family: Bungee;
+    color: white;
+  }
+
+  #error-container {
+    margin: 10px auto;
+    background-color: rgb(252, 223, 223);
+    border: solid red;
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    color: red;
+    display: none;
+  }
+
+  #error-message {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
 }
